@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><tracks>
+    <track>
+        <id>1</id>
+        <genre>Hip-Hop</genre>
+        <singer>ASAP Rocky</singer>
+        <title>Sunshine</title>
+    </track>
+    <track>
+        <id>2</id>
+        <genre>Jazz</genre>
+        <singer>Marvin Gaye</singer>
+        <title>Ain't No Mountain High Enough</title>
+    </track>
+    <track>
+        <id>3</id>
+        <genre>Soul</genre>
+        <singer>Lesley Gore</singer>
+        <title>It's My Party</title>
+    </track>
+    <track>
+        <id>4</id>
+        <genre>Фолк</genre>
+        <singer>Любэ</singer>
+        <title>Бабушка</title>
+    </track>
+<track><id>962</id><singer/><title/><genre/></track></tracks>

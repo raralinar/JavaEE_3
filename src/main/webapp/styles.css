@@ -1,0 +1,189 @@
+* {
+      box-sizing: border-box;
+    }
+
+    #myInput {
+      background-position: 10px 10px;
+      background-repeat: no-repeat;
+      width: 100%;
+      font-size: 16px;
+      padding: 12px 20px 12px 40px;
+      border: 1px solid #ddd;
+      margin-bottom: 12px;
+    }
+
+    #myTable {
+      border-collapse: collapse;
+      width: 100%;
+      border: 1px solid #ddd;
+      font-size: 18px;
+    }
+
+    #myTable th, #myTable td {
+      text-align: left;
+      padding: 12px;
+    }
+
+    #myTable tr {
+      border-bottom: 1px solid #ddd;
+    }
+
+    #myTable tr.header, #myTable tr:hover {
+      background-color: #f1f1f1;
+    }
+    .round-button {
+      display: block;
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      border: 2px solid #f5f5f5;
+      border-radius: 50%;
+      color: #f5f5f5;
+      text-align: center;
+      text-decoration: none;
+      background: #464646;
+      box-shadow: 0 0 3px gray;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .round-button:hover {
+      background: #262626;
+    }
+
+    @import url('https://rsms.me/inter/inter.css');
+
+    :root {
+      --color-light: white;
+      --color-dark: #212121;
+      --color-signal: #FC8EAC;
+
+      --color-background: white;
+      --color-text: #212121;
+      --color-accent: #FC8EAC;
+
+      --size-bezel: .5rem;
+      --size-radius: 4px;
+
+      line-height: 1.4;
+
+      font-family: 'Inter', sans-serif;
+      font-size: calc(.6rem + .4vw);
+      color: black;
+      background: #FC8EAC;
+      font-weight: 300;
+      padding: 0 calc(var(--size-bezel) * 3);
+    }
+
+    h1, h2, h3 {
+      font-weight: 900;
+    }
+
+    mark {
+      background: #db7093;
+      color: var(--color-text);
+      font-weight: bold;
+      padding: 0 0.2em;
+    }
+
+    .card {
+      background: #db709;
+      padding: calc(4 * var(--size-bezel));
+      margin-top: calc(4 * var(--size-bezel));
+      border-radius: var(--size-radius);
+      border: 3px solid var(#db7093, #db7093);
+      box-shadow: .5rem .5rem 0 var(#db7093, #db7093);
+
+      &--inverted {
+        --color-background: #db7093;
+        color: white;
+        --color-shadow: #db7093;
+      }
+
+      &--accent {
+        --color-background: #db7093;
+        --color-accent: var(--color-light);
+        color: var(--color-dark);
+      }
+
+      *:first-child {
+        margin-top: 0;
+      }
+    }
+
+
+    .l-design-widht {
+      max-width: 40rem;
+      padding: 1rem;
+    }
+
+    .input {
+      position: relative;
+
+      &__label {
+        position: absolute;
+        left: 0;
+        top: 0;
+        padding: calc(var(--size-bezel) * 0.75) calc(var(--size-bezel) * .5);
+        margin: calc(var(--size-bezel) * 0.75 + 3px) calc(var(--size-bezel) * .5);
+        background: pink;
+        white-space: nowrap;
+        transform: translate(0, 0);
+        transform-origin: 0 0;
+        background: #db7093;
+        transition: transform 120ms ease-in;
+        font-weight: bold;
+        line-height: 1.2;
+      }
+      &__field {
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        border: 3px solid #db7093;
+        padding: calc(var(--size-bezel) * 1.5) var(--size-bezel);
+        color: #db7093;
+        background: transparent;
+        border-radius: var(--size-radius);
+
+        &:focus,
+        &:not(:placeholder-shown) {
+          & + .input__label {
+            transform: translate(.25rem, -65%) scale(.8);
+            color: #db7093;
+          }
+        }
+      }
+    }
+
+
+    .button-group {
+      margin-top: calc(var(--size-bezel) * 2.5);
+    }
+
+    button {
+      color: #db7093;
+      padding: var(--size-bezel) calc(var(--size-bezel) * 2);
+      background: #FC8EAC;
+      border: none;
+      border-radius: var(--size-radius);
+      font-weight: 900;
+
+      &[type=reset]{
+        background: #FC8EAC;
+        font-weight: 200;
+      }
+    }
+
+    button + button {
+      margin-left: calc(var(--size-bezel) * 2);
+    }
+
+    .icon {
+      display: inline-block;
+      width: 1em; height: 1em;
+      margin-right: .5em;
+    }
+
+    .hidden {
+      display: none;
+    }
